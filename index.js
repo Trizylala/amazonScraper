@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 //  Get Product Details
 
-app.get('/products/:productId?api_key=', async (req, res) => {
+app.get('/products/:productId', async (req, res) => {
 
     const { productId } = req.params;
     const { api_key } = req.query;
@@ -39,7 +39,7 @@ app.get('/products/:productId?api_key=', async (req, res) => {
 
 //  Get Product Reviews
 
-app.get('/products/:productId/reviews?api_key=', async (req, res) => {
+app.get('/products/:productId/reviews', async (req, res) => {
 
     const { productId } = req.params;
     const { api_key } = req.params;
@@ -55,7 +55,7 @@ app.get('/products/:productId/reviews?api_key=', async (req, res) => {
 
 //  Get Product Offers
 
-app.get('/products/:productId/offers?api_key=', async (req, res) => {
+app.get('/products/:productId/offers', async (req, res) => {
 
     const { productId } = req.params;
     const { api_key } = req.params;
@@ -71,7 +71,7 @@ app.get('/products/:productId/offers?api_key=', async (req, res) => {
 
 
 //  Get Search results
-app.get('/search/:searchQuery?api_key=', async (req, res) => {
+app.get('/search/:searchQuery', async (req, res) => {
 
     const { searchQuery } = req.params;
     const { api_key } = req.params;
