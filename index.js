@@ -17,7 +17,7 @@ const generateScraperUrl = (api_key) => `http://api.scraperapi.com?api_key=${api
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.status(200).send('Welcome to Amazon Scraper API by Temidayo.');
+    res.send('Welcome to Amazon Scraper API by Temidayo.');
 });
 
 //  Get Product Details
